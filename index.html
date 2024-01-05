@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music FusionX</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div id="main">
+        <div class="left-sidebar playlist-box">
+
+            <h1 class="logo">Playlist</h1>
+            <div class="box-1">
+                <div class="playlist-btn active"><i class="bx bx-music"></i>Playlist</div>
+                <div class="last-played-btn"><i class='bx bx-time'></i>Last Listening</div>
+                <div class="recommanded-btn"><i class='bx bxs-hot'></i>Recommanded</div>
+            </div>
+            <div class="search-box">
+                <input type="text" id="list-search" placeholder="Search a song">
+                <i class="bx bx-search list-search-btn"></i>
+            </div>
+            <div class="songs-list">
+                <!-- <div class="songs-box">
+                    <p class="songs-index">01</p>
+                    <div class="img-box">
+                        <img src="Music-covers/obito-uchiha-from-naruto-4k-anime-phone-osnkeyeokiv1qzyv.jpg" alt="">
+                    </div>
+                    <div class="name-artist">
+                        <p class="song-name">alan walker faded</p>
+                        <p class="artist">Cloves</p>
+                    </div>
+                    <button class="play-btn">
+                        <i class='bx bx-play'></i>
+                    </button>
+                </div> -->
+
+            </div>
+        </div>
+
+        <div class="right-sidebar">
+
+            <div class="header">
+                <div class="nav">
+                    <li class="active">Discover</li>
+                    <li class="">Trending</li>
+                    <li class="">Library</li>
+                </div>
+                <div class="search-box">
+                    <input type="text" id="main-search" placeholder="Search A Song">
+                    <i class="bx bx-search main-search-btn"></i>
+                </div>
+            </div>
+
+            <div class="main-podcast-banner">
+
+                <div class="left-box">
+                    <p class="song-name">neffex grateful</p>
+                    <p class="artist-name">neffex</p>
+                    <p class="about">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ipsum quae non accusamus
+                        amet. Explicabo quidem.
+                    </p>
+                    <div class="btns">
+                        <button class="play">Play</button><button class="follow">Follow</button>
+                    </div>
+                </div>
+
+                <div class="right-box">
+                    <img src="Podcasts-img/1.png">
+                </div>
+
+            </div>
+
+            <div id="main-body">
+
+                <div class="popular-box">
+                    <h1 class="logo">Popular Song</h1>
+                    <div class="card-box">
+                        <!-- <div class="card">
+                            <div class="music-cover">
+                                <img src="Music-Covers/images.jpeg">
+                                <div class="overflow">
+                                    <button>
+                                        <i class="bx bx-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="name-artist">
+                                <p class="name">grateful</p>
+                                <p class="artist">Neffex</p>
+                            </div>
+                        </div> -->
+
+                    </div>
+                </div>
+
+                <div class="artist-box">
+                    <h1 class="logo">Artist</h1>
+                    <div class="card-box">
+                        <!-- <div class="card">
+                            <div class="img-box">
+                                <img src="Music-Covers/images.jpeg">
+                            </div>
+                            <p class="name">Neffex</p>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="trending-box">
+                    <h1 class="logo">Trending</h1>
+                    <div class="card-box">
+                        <div class="card">
+                            <div class="music-cover">
+                                <img src="Music-Covers/images.jpeg">
+                                <div class="overflow">
+                                    <button>
+                                        <i class="bx bx-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="name-artist">
+                                <p class="name">grateful</p>
+                                <p class="artist">Neffex</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="main-player">
+            <div class="wave-box">
+                <div class="wave-1"></div>
+                <div class="wave-2"></div>
+                <div class="wave-3"></div>
+                <div class="wave-4"></div>
+                <div class="wave-5"></div>
+            </div>
+            <div class="img-box">
+                <img src="Music-Covers/images.jpeg">
+            </div>
+            <div class="name-artist">
+                <p class="song-name">faded</p>
+                <p class="artist">Alan Walker</p>
+            </div>
+            <div class="slider-time-btns">
+                <audio src="" id="main-audio"></audio>
+                <div class="btn-box">
+                    <button class="shuffle"><i class='bx bx-sort' style="transform: rotate(90deg);"></i></button>
+                    <button class="prev">
+                        <i class='bx bx-skip-previous'></i>
+                    </button>
+                    <button class="play-pause">
+                        <i class='bx bx-play'></i>
+                    </button>
+                    <button class="next">
+                        <i class='bx bx-skip-next'></i>
+                    </button>
+                    <button class="heart">
+                        <i class="bx bx-heart"></i>
+                    </button>
+                </div>
+                <div class="slider-time">
+                    <span class="currenttime">0:00</span>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <span class="totaltime">0:00</span>
+                </div>
+            </div>
+            <div class="volume-box">
+                <i class='bx bx-volume-full'></i>
+                <div class="slider-box">
+                    <div class="slider"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
